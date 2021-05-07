@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menue{
+    padding-right: 200px;
+    padding-left: 200px;
+    height: 150px;
+}
+header img{
+    height: 150px;
+    float: left;
+}
+header.menue ul li{
+   margin-top: 60px;
+   list-style: none;
+   float: left; 
+   margin-left: 5px;
+
+}
+
+main{
+    height: 500px;
+    background-image:image-set('img/photo_home.jpg');
+    background-size: cover;
+    text-align: center; 
+    align-items: center;
+}
