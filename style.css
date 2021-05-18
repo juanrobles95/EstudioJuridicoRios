@@ -1,28 +1,212 @@
+
 *{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
-.menue{
-    padding-right: 200px;
-    padding-left: 200px;
+html{
+    height: 100%;
+}
+main > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     height: 150px;
 }
-header img{
-    height: 150px;
-    float: left;
-}
-header.menue ul li{
-   margin-top: 60px;
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+nav ul li{
+    
+   align-self: center;
    list-style: none;
-   float: left; 
-   margin-left: 5px;
+   float: left;
+   margin-left: 10px;
+}
+nav ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: darkgray;
+}
+nav ul{
+    height: initial;
+    border-top-width: 2px;
+    border-color: solid black;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
 
 }
+/*----------- Galeria Photo-------------------*/
 
-main{
-    height: 500px;
+figure{
     background-image:image-set('img/photo_home.jpg');
     background-size: cover;
+    
+    display: flex;
+    height: 500px;
     text-align: center; 
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+/*------------MAIN-------------------*/
+.galeri{
+    display: inline-block;
+    height: 600px;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 150px;
+    text-align: center;
+}
+.galeri div{
+    width: 400px;
+}
+
+
+/*------------Contact----------------*/
+.contact{
+    background-color: #606060;
+    height: 400px;
+    padding: 5rem;
+}
+.contact h1{
+    width: 50rem;
+    margin: 0 auto;
+    margin-bottom: .9rem;
+    color: white;
+    font-size: 2.3rem;
+}
+.container_contact{
+    display: inline-flex;
+    margin: 0 auto;
+    width: 50rem;
+    margin-left: 20%;
+}
+.container_contact div h5{
+    margin-top: 2rem;
+    margin-right: 10rem;
+    margin-bottom: .5rem;
+}
+
+form{
+    text-align: right;
+}
+form input,textarea{   
+    margin-top: .5rem;
+    display: flex;
+    width: 30rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 30rem;
+    max-height: 6rem;
+ 
+}
+form button{
+    width: 100px;
+    margin-top: .5rem;
+    border-color: #ccc8c8;
+    background: #ccc8c8;
+    height: 1.5rem;
+    width: 10rem;
+}
+/*------------FOOTER----------------*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    background-color: #748092;
+    
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer img{
+    display: flex;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/*--------container--acc----------------*/
+
+.container_acc{
+    display: flex;
+    margin: 50px 15%;
+    text-align: justify;
+}
+
+.photo_acc{
+    background-image:image-set('img/photo121212121.jpg');
+    background-size: cover; 
+}
+.container_acc div{
+  width: 50%;
+  margin: 0 20px;  
+}
+/*--------container--art----------------*/
+.container_art{
+    text-align: justify;
+    display: flex;
+    margin: 50px 15%;
+}
+.photo_art{
+    background-image:image-set('img/photo13131313.jpg');
+    background-size: cover; 
+    background-position-x: center;
+}
+.container_art div{
+    width: 50%;
+    margin: 0 20px;  
+}
+/*--------container--lab----------------*/
+
+.photo_lab{
+    background-image:image-set('img/foto3.jpg');
+    background-size: cover;
+    background-position-x: center; 
+}
+
+/*--------container--penal----------------*/
+
+.photo_penal{
+    background-image:image-set('img/foto8.jpg');
+    background-size: cover;
+    background-position-x: center; 
+}
+/*--------container--civil----------------*/
+.container_civil{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.photo_civil{
+    background-image:image-set('img/foto4.jpg');
+    background-size: cover;
+    background-position-y: center;
+   width: 600px;
+   height: 400px;
+   margin: 0 auto;
+}
+.container_civil ul{
+    display: flex;
+    list-style: none;
+}
+container_civil ul li{
+    list-style: none;
 }

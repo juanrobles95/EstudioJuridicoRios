@@ -6,64 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div>
-              
-        <header class="menue">
-            <img src="img/Ico_home.jpg" alt="Ico_home">
-                
-            <ul class="barra_menue">
-                <li><a href="">INICIO</a></li>
-                <li><a href="">ACC.DE TRANSITO</a></li>
-                <li><a href="">ART</a></li>
-                <li><a href="">PENAL</a></li>
-                <li><a href="">LABORAL</a></li>
-                <li><a href="">CIVIL</a></li>
-                <li><a href="">QUIENES SOMOS</a></li>
-                <li><a href="">CONTACTO</a></li>
-                
-            </ul>
-        </header>
-        
+<body>              
         <main>
-            <h1>ESTUDIO JURÍDICO</br>RIOS</h1>
-            <a href="">Contactanos</a>
-        </main>
+            <div id="nav">
+                <img src="img/Ico_home.jpg" alt="Ico_home">
+            <nav>                
+                <ul class="main-nav">
+                    <li class="main-nav__item"><a href="index.html">INICIO</a></li>
+                    <li class="main-nav__item"><a href="accDeTransito.html">ACC.DE TRANSITO</a></li>
+                    <li class="main-nav__item"><a href="art.html">ART</a></li>
+                    <li class="main-nav__item"><a href="penal.html">PENAL</a></li>
+                    <li class="main-nav__item"><a href="laboral.html">LABORAL</a></li>
+                    <li class="main-nav__item"><a href="civil.html">CIVIL</a></li>
+                    <li class="main-nav__item"><a href="quienesSomos.html">QUIENES SOMOS</a></li>
+                    <li class="main-nav__item"><a href="contacto.html">CONTACTO</a></li>   
+                </ul>
+            </nav> 
+        </div>
+        <figure class="encabezado">
+            <h1>ESTUDIO JURÍDICO</br>RIOS C & G</h1>
+        </br> 
+            <a href="">Contactanos</a>  
+        </figure>
         <section>
-            <div>
-                <!--galeria de imagen x3 -->
+            <div class="galeri">
+                <!--galeria de imagen x3-->
+                <div>
+
+                </div>
             </div>
 
-            <div>
-                <!--Contáctenos-->
+            <div class="contact">
+                <h1>CONTÁCTANOS</h1>
+                <div class="container_contact">
+                <div>
+                    <h5>Email</h5>
+                    <p>
+                    info@misitio.com
+                    </p>
+                    <h5>Teléfono</h5>
+                    <p>011-3323-4452</p>
+                </div>
+                <form action="/mundoalexis1495@gmail.com" method="POST">              
+                        <label for="nombre">
+                        <input type="text" id="Name" placeholder="    Nombre" autocomplete="name" required>
+                        <label for="nombre">
+                        <input type="email" id="Email" placeholder="    ejemplo@email.com" autocomplete="email" required>
+                        <label for="nombre">
+                        <input type="text" id="Telefono" placeholder="    Telefono/Celular:011.." required>
+                        <label for="nombre">
+                        <textarea id="Message" placeholder="    Escribe tu mensaje aquí..."></textarea>    
+                        <button type="submit">Enviar</button>
+                </form>
             </div>    
+        </div>    
         </section>
-        <form action="/mundoalexis1495@gmail.com" method="POST">
-            <ul>
-                <li>
-                    <input type="text" id="Name" name="Nombre" value="Nombre">
-                </li>
-                <li>
-                    <input type="email" id="Email" name="Email" value="Email">
-                </li>
-                <li>
-                    <input type="text" id="Telefono" name="Teléfono" value="Teléfono"> 
-                </li>
-                <li>
-                    <textarea id="Message" name="Escribe tu mensaje aquí..."></textarea>
-                </li>
-                <li class="Button">
-                    <button type="submit">Enviar</button>
-                </li>
-            </ul>
-        </form>    
+    </main>
+       
         <footer>
-            <ul>
-                <li><a><!--flecha apuntando arriba--></a></li>
-                <li><a>VOLVER ARRIBA</a></li>
-            </ul>
+            <a href="">
+                <img src="../plantilla gime/up-arrow_icon-icons.com_65094.svg" alt="">
+            <h4>VOLVER ARRIBA</h4>        
+            </a>
         </footer>
-    </div>
     
 </body>
 </html>
