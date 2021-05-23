@@ -6,6 +6,9 @@
     padding: 0;
     
 }
+* img{
+    pointer-events: none;
+}
 html{
     height: 100%;
 }
@@ -44,84 +47,140 @@ nav ul{
     border-bottom-style: solid;
 
 }
-/*----------- Galeria Photo-------------------*/
+/*----------- EST JURID-------------------*/
 
 figure{
     background-image:image-set('img/photo_home.jpg');
     background-size: cover;
-    
+    background-attachment: fixed;
     display: flex;
     height: 500px;
-    text-align: center; 
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-
+   
+}
+figure div{
+    display: flex;
+    text-align: center;
+    flex-direction:column;
+    justify-content: center;
+}
+figure div h1{
+    font-family: fantasy;
+    font-size: 50px;
+}
+figure div a{
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid #606060; /* Green */
+    
 }
 section{
     display: flex;
     flex-direction: column;
 }
-/*------------MAIN-------------------*/
-.galeri{
-    display: inline-block;
-    height: 600px;
-    width: 400px;
-    margin: 0 auto;
-    padding-top: 150px;
-    text-align: center;
-}
-.galeri div{
-    width: 400px;
-}
 
+/*------------MAIN-------------------*/
+.slider{
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 200px;
+    margin-top: 50px;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite ;
+    animation-direction: alternate;
+   
+}
+.slider li{
+    margin-left: auto;
+    list-style: none;
+}
+.slider div{
+    height: 500px;
+    width: 800px;
+}
+.slider img{
+    display: none;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+
+    75%{margin-left:-300%;}
+    100%{margin-left:-300%;}
+}
+.slider1{
+    background-image: image-set('img/foto3_alt.jpg');
+    background-size: cover;
+}
+.slider2{
+    background-image: image-set('img/foto6.jpg');
+    background-size: cover;
+}
+.slider3{
+    background-image: image-set('img/photo13131313.jpg');
+    background-size: cover;
+}
+.slider4{
+    background-image: image-set('img/photo121212121.jpg');
+    background-size: cover;
+}
 
 /*------------Contact----------------*/
+
 .contact{
+    display:flex;
     background-color: #606060;
     height: 400px;
-    padding: 5rem;
+    align-items: center;
+    justify-content: center;
 }
-.contact h1{
-    width: 50rem;
+.contact div{
     margin: 0 auto;
-    margin-bottom: .9rem;
-    color: white;
-    font-size: 2.3rem;
+    /* border: 1px solid yellow; */
+
 }
-.container_contact{
-    display: inline-flex;
-    margin: 0 auto;
-    width: 50rem;
-    margin-left: 20%;
+.contact div div{
+    display: flex;
+    flex-direction: row;
 }
-.container_contact div h5{
-    margin-top: 2rem;
-    margin-right: 10rem;
-    margin-bottom: .5rem;
+.contact div div div{
+   /* border: 1px solid yellow; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact div div div h5{
+ margin-top: 20px;
+}
+.contact div div div p{
+    margin-bottom: 10px;
+}
+form label{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    margin-left: 50px;
+}
+form label input,textarea{
+    margin-bottom: 10px;
 }
 
-form{
-    text-align: right;
-}
-form input,textarea{   
-    margin-top: .5rem;
-    display: flex;
-    width: 30rem;
-    flex-direction: column;
-    justify-content: flex-end;
-    max-width: 30rem;
-    max-height: 6rem;
- 
-}
-form button{
-    width: 100px;
-    margin-top: .5rem;
-    border-color: #ccc8c8;
-    background: #ccc8c8;
-    height: 1.5rem;
-    width: 10rem;
-}
 /*------------FOOTER----------------*/
 footer{
     display: flex;
@@ -195,18 +254,34 @@ footer img{
     margin: 0 auto;
     text-align: center;
 }
-.photo_civil{
+/*.photo_civil{
     background-image:image-set('img/foto4.jpg');
     background-size: cover;
     background-position-y: center;
    width: 600px;
    height: 400px;
    margin: 0 auto;
-}
-.container_civil ul{
+}*/
+.container_civil{
     display: flex;
-    list-style: none;
+    flex-direction: column;
 }
-container_civil ul li{
-    list-style: none;
+.container_civil div{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.container_civil div div{
+    display: flex;
+    flex-direction: row;
+}
+.container_civil img{
+    width: 400px;
+}
+.container_civil div div div{
+    text-align: justify;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    flex-direction:column;
 }
