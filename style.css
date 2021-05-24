@@ -576,6 +576,9 @@ form textarea{
     width: 90%;
     margin: 0 auto;
 }
+.d_lab{
+    text-align: center;
+}
 .wsp{
     position: fixed;
     left: 50px;
