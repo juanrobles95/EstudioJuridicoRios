@@ -149,8 +149,9 @@ section{
     margin-bottom: 20px;
 }
 .slider1{
-    background-image: url('img/photo121212121.jpg');
+    background-image: url('img/foto10.jpeg');
     background-size: cover;
+    background-position-x: center;
     padding-top: 25px;
     padding-left: 450px;
 }
@@ -159,12 +160,15 @@ section{
     background-size: cover;
     padding-top: 25px;
     padding-left: 625px;
+    background-position-x: center;
+
 }
 .slider3{
     background-image: url('img/foto8.jpg');
     background-size: cover;
     padding-top: 25px;
     padding-left: 675px;
+    background-position-x: center;
 
 }
 
@@ -173,6 +177,8 @@ section{
     background-size: cover;
     padding-top: 25px;
     padding-left: 715px;
+    background-position-x: center;
+
 }
 
 
@@ -327,6 +333,11 @@ footer img{
 
 @media (max-width: 768px){
 
+    .slider ul{
+        display: flex;
+        animation: cambio 12s infinite ;
+        animation-direction: alternate;
+    }
     main nav{display: none;}    
     figure{
         height: 500px;
@@ -334,13 +345,16 @@ footer img{
     figure div h1{
         font-family: fantasy;
         font-size: 30px;
-    text-shadow: 1px 2px #999;
+        text-shadow: 1px 2px #999;
     }
 
 figure div a{
+    background-color: rgb(170, 170, 170);
     font-size: 20px;
     width: 160px;
     margin-top: 100px;
+    border: 2px solid #606060; /* Green */
+
 }
 .slider{
     width: 100%;
@@ -562,9 +576,14 @@ form textarea{
     width: 90%;
     margin: 0 auto;
 }
-
-
-
-
-
+.wsp{
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    width: 48px;
+    height: 48px;
+    background-image: url('img/whatsapp_icon-icons.com_62800.png');
+    border-radius: 50%;
+    box-shadow: 1px 2px rgba(0, 2, 2, 0.474);
+}
 }
