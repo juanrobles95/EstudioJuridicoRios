@@ -324,7 +324,7 @@ footer img{
 /*-------------RESPONSIS DESING------------------*/
 
 @media (max-width: 768px){
-    
+
     main nav{display: none;}    
     figure{
         height: 500px;
@@ -342,16 +342,15 @@ figure div a{
     margin-top: 30px;
 }
 .slider{
-    width: 460px;
+    width: 100%;
     margin-bottom: 5px;
     margin-top: 5px;
 }
 .slider div{
     height:400px;
-    width: 460px;
+    width: 100vw;
 }
 .slider ul li{
-    width: 460px;
     font-size: 40px;
     color: rgb(0, 0, 0);
     text-shadow: 1px 2px #999;
@@ -364,7 +363,7 @@ figure div a{
     opacity: 9;
     background-color: transparent;
     display: inline;
-    width: 480px;
+    width: 400px;
     justify-content: center;
 }
 .slider1,.slider2,.slider3,.slider4{
