@@ -190,7 +190,8 @@ section{
 
 .contact{
     display:flex;
-    background-color: #606060;
+    /*background-color: #606060;*/
+    background-color: #919191;
     height: 400px;
     align-items: center;
     justify-content: center;
@@ -237,6 +238,7 @@ footer{
     flex-direction: column;
     height: 150px;
     background-color: #748092;
+    
     
 }
 footer a{
@@ -399,6 +401,7 @@ figure div a{
 }
 .contact{
     display: flex;
+    height: 500px;
 }
 .contact div div{
     flex-direction: column-reverse;
@@ -426,13 +429,16 @@ form{
 }
 form input,textarea,button{
     width: 95vw;
+    height: 50px;
 }
 form textarea{
     margin-bottom: 10px;
     height: 100px;
 
 }
-
+.acc_h3{
+    margin-top: 10px;
+}
 
 
 /*-----------MENU HAMBURGESA------------*/
