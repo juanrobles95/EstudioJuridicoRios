@@ -255,7 +255,13 @@ footer img{
 .container_acc{
     display: flex;
     margin: 50px 15%;
+}
+.container_acc li,p{
     text-align: justify;
+}
+.li_acc{
+    color: red;
+    border-color: 2px solid black;
 }
 
 .photo_acc{
@@ -265,6 +271,12 @@ footer img{
 .container_acc div{
   width: 50%;
   margin: 0 20px;  
+}
+.container_acc ul{
+    padding-left: 15px;
+}
+.container_acc ul li{
+    margin-top: 5px;
 }
 /*--------container--art----------------*/
 .container_art{
