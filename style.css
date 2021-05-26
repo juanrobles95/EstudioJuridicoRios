@@ -54,7 +54,6 @@ nav ul{
     border-top-style: solid;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-
 }
 /*----------- EST JURID-------------------*/
 
@@ -229,6 +228,32 @@ form{
 form label input,textarea{
     margin-bottom: 10px;
 }
+/*------Contact_enviado-----*/
+.contact_enviado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+.contact_enviado h4,h1{
+    text-align: center;
+}
+.contact_enviado h4{
+    font-size: 20px;
+}
+
+.contact_enviado div img{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+
 
 /*------------FOOTER----------------*/
 footer{
@@ -543,8 +568,32 @@ form textarea{
   text-decoration:none;
   color:#333;
 }
+.photo_penal{
+    height: 300px;
+}
+.photo_lab{
+    height: 300px;
+}
+.container_civil img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.container_civil{
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    width: 95%;
+}
+.container_civil div div{
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 }
+
+
 @media (max-width: 768px){
 .container_acc{
     display: flex;
@@ -588,27 +637,12 @@ form textarea{
 }
 
 }
+
 .photo_penal{
-    height: 300px;
     width: 50%;
 }
 .photo_lab{
-    height: 300px;
     width: 100%;
-}
-.container_civil{
-    display: flex;
-    margin: 30px auto;
-    flex-direction: column;
-    width: 95%;
-}
-.container_civil div div{
-    display: flex;
-    flex-direction: column-reverse;
-}
-.container_civil img{
-    width: 90%;
-    margin: 0 auto;
 }
 .d_lab{
     text-align: center;
@@ -622,5 +656,4 @@ form textarea{
     background-image: url('img/whatsapp_icon-icons.com_62800.png');
     border-radius: 50%;
     box-shadow: 1px 2px rgba(0, 2, 2, 0.474);
-}
 }
