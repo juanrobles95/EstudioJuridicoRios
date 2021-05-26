@@ -260,6 +260,7 @@ footer img{
 }
 .container_acc li,p{
     text-align: justify;
+    line-height: 25px;
 }
 .li_acc{
     color: red;
@@ -571,7 +572,22 @@ form textarea{
     width: 90%;
     margin: 0 auto;
 }
+.container_art p{
+    line-height: 25px;
+}
+.container_art ul{
+    padding-left: 15px;
+}
+.container_art h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.container_art li{
+    padding-left: 5px;
+    margin-top: 10px;
+}
 
+}
 .photo_penal{
     height: 300px;
     width: 50%;
