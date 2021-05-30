@@ -214,7 +214,7 @@ section{
 .contact div div div h5{
  margin-top: 20px;
 }
-.contact div div div p{
+.contact div div div div p{
     margin-bottom: 10px;
 }
 form label{
@@ -228,6 +228,12 @@ form{
 form label input,textarea{
     margin-bottom: 10px;
 }
+.contact div.redes{
+    flex-direction: row;
+}
+
+
+
 /*------Contact_enviado-----*/
 .contact_enviado{
     display: flex;
@@ -251,8 +257,27 @@ form label input,textarea{
     width: 200px;
     margin: 0 auto;
 }
-
-
+div.redes{
+    display: flex;
+    flex-direction: row;
+}
+.redes a{
+    margin: 10px 10px;
+    width: 32px;
+    height: 32px;
+}
+.instagram{
+    background-image: url('img/instagram-symbol_icon-icons.com_73522.png');
+    background-size: contain;
+}
+.facebook{
+    background-image: url('img/Facebook_Square_icon-icons.com_49948.png');
+    background-size: contain;
+}
+.linkedin{
+    background-image: url('img/sociallinkedin_member_70.png');
+    background-size: contain;
+}
 
 
 /*------------FOOTER----------------*/
@@ -427,7 +452,7 @@ figure div a{
 }
 .contact{
     display: flex;
-    height: 500px;
+    height: 600px;
 }
 .contact div div{
     flex-direction: column-reverse;
@@ -442,11 +467,10 @@ form{
     margin-top: 20px;
 }
 .contact div div div{
-    flex-direction: row;
+    flex-direction: column;
     width: 95vw;
     justify-content: space-between;
     align-items: baseline;
-    
 }
 .contact div div div p, h5{
     margin-top: 0px;
@@ -465,7 +489,20 @@ form textarea{
 .acc_h3{
     margin-top: 10px;
 }
+.contact div div div div{
+  
+    display: flex;
+    flex-direction: row;
+}
 
+div.redes{
+    padding: 29px 65px 0px 65px;
+}
+div.redes a{
+    margin: 0 5px;
+    width: 32px;
+    height: 32px;
+}
 
 /*-----------MENU HAMBURGESA------------*/
 .hamburger{
