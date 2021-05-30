@@ -217,6 +217,10 @@ section{
 .contact div div div div p{
     margin-bottom: 10px;
 }
+.contact div div div div{
+    flex-wrap: wrap;
+}
+
 form label{
     width: 400px;
     display: flex;
